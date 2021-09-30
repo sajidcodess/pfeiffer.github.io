@@ -1,0 +1,46 @@
+.contact {
+    background: gainsboro;
+    padding: 2rem;
+}
+
+.contact-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1rem auto;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.contact-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.profile-content {
+    z-index: 22;
+}
+
+.tele {
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 700px) {
+    .contact-flex {
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .contact-images {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: auto;
+
+        .project-image {
+            margin: auto;
+        }
+    }
+}

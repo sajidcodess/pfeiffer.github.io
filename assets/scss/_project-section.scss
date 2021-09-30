@@ -1,0 +1,55 @@
+.portfolio {
+    background-color: gainsboro;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    & h2 {
+        text-align: center;
+        padding: 4rem 0 1rem 0;
+    }
+}
+
+.grid {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+    gap: 1rem;
+}
+
+.project-image {
+    position: relative;
+    width: max-content;
+
+    & img {
+        max-width: 100%;
+        width: 300px;
+        height: 250px;
+    }
+
+    &:hover {
+        outline: 2px solid rgb(89,65,152);
+        background: rgba(89,65,152, .4);
+
+        & .location {
+            opacity: 1;
+        }
+    }
+}
+
+.location {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.546);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    transition: all 250ms ease-in-out;
+    text-align: center;
+    opacity: 0;
+}
+
+

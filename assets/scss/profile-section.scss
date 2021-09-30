@@ -1,0 +1,32 @@
+.profile-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+
+.profile-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.profile-content {
+    z-index: 22;
+}
+
+@media screen and (max-width: 700px) {
+    .profile-flex {
+        text-align: center;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .profile-images {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: auto;
+    }
+}
